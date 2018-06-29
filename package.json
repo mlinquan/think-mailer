@@ -1,6 +1,6 @@
 {
   "name": "think-mailer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mailer adaper",
   "scripts": {
     "watch": "babel ./src --out-dir ./ --watch",
