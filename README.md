@@ -57,6 +57,7 @@ const Base = require('./base.js');
 
 module.exports = class extends Base {
   indexAction() {
+    const ctx = this
     const mailer = ctx.mailer()
     return mailer.send({
       from: 'xxx@xxx.com',
@@ -72,7 +73,7 @@ module.exports = class extends Base {
     .catch(function(err) {
       console.log(err)
       return ctx.fail(1000, 'Email send failed.')
-    });
+    })
   }
 };
 ```
